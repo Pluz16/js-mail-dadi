@@ -33,6 +33,23 @@ if (emailFound ==false){
     console.log('Cambia mail')
 }
 
+// DADI
+
+const dado1 = [1, 2, 3, 4, 5, 6]
+const dado2 = [1, 2, 3, 4, 5, 6]
+
+let numeriRandom = []
+const numeriDaGenerare = Math.floor(Math.random() * 100)
+
+for (let i = 0; i < 1; i++) {
+	let num = Math.floor(Math.random() * 6)
+	numeriRandom.push(num)
+}
+
+console.log(numeriRandom)
+
+
+
 
 
 
