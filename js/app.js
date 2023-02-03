@@ -14,14 +14,25 @@ console.log(sceltaUtente)
 const provider = sceltaUtente
 
 
-// Se la scelta dell'utente corrisponde a mail disponibili:
-if  (provider === email ){
-    console.log(" Bella Mail" )
-}
-else {
-    console.log(" Prova con un'altra mail o controlla di averla scritta bene! ")
+let emailFound =false
 
+// Se la scelta dell'utente corrisponde a mail disponibili:
+
+for(let i= 0; i < 6 ; i++){
+
+    let MailRegistered = email[i]
+
+if  (provider === MailRegistered ){
+    console.log(" Bella Mail" )
+    emailFound =true
+    // let mailConfirmed = mails[i]
 }
+}
+
+if (emailFound ==false){
+    console.log('Cambia mail')
+}
+
 
 
 
