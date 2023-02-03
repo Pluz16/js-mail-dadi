@@ -35,18 +35,33 @@ if (emailFound ==false){
 
 // DADI
 
-const dado1 = [1, 2, 3, 4, 5, 6]
-const dado2 = [1, 2, 3, 4, 5, 6]
+// const dado1 = [1, 2, 3, 4, 5, 6]
+// const dado2 = [1, 2, 3, 4, 5, 6]
 
-let numeriRandom = []
-const numeriDaGenerare = Math.floor(Math.random() * 100)
+let dado1 = []
+let dado2 = []
+// const numeriDaGenerare = Math.floor(Math.random() * 100)
 
 for (let i = 0; i < 1; i++) {
-	let num = Math.floor(Math.random() * 6)
-	numeriRandom.push(num)
+	let num = Math.floor(Math.random() * 6) + 1
+	dado1.push(num)
 }
 
-console.log(numeriRandom)
+for (let i = 0; i < 1; i++) {
+	let num = Math.floor(Math.random() * 6) + 1
+	dado2.push(num)
+}
+
+console.log(dado1, dado2)
+
+if (dado1 < dado2){
+    console.log('Dado2 vince')
+} else if ( dado1 > dado2) {
+    console.log('Dado1 vince')
+
+} else console.log('Pareggio')
+
+
 
 
 
