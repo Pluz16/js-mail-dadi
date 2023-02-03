@@ -19,6 +19,7 @@ if  (provider === email ){
     console.log(" Bella Mail" )
 }
 else {
+    console.log(" Prova con un'altra mail o controlla di averla scritta bene! ")
 
 }
 
